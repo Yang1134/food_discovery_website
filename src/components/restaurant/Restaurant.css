@@ -1,0 +1,147 @@
+.main {
+    width: 100%;
+  }
+  
+  .section {
+    padding: 1rem;
+  }
+  
+  .restaurant-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff9f1;
+  }
+  
+  .main .secTitle .title {
+    position: relative;
+    width: max-content;
+    color: black;
+    margin: 1rem 0;
+    z-index: 2;
+  }
+  
+  .secContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+  
+  .secContent .singleRetaurant {
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background: #fff9f1;
+    box-shadow: 0 2px 4px rgba(140, 140, 140, 0.549);
+    overflow: hidden;
+  }
+
+  @media (max-width: 1024px) {
+    .secContent {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .secContent {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .secContent {
+      grid-template-columns: 1fr; /* 1 column for extra small screens */
+    }
+  }
+  
+  
+  .secContent .singleRetaurant:hover {
+    cursor: pointer;
+    background: fd843d;
+    box-shadow: 0 2px 4px rgba(140, 140, 140, 0.549);
+  }
+  
+  .imageDiv {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .imageDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s ease;
+  }
+  
+  .imageDiv img:hover {
+    transform: scale(1.1);
+  }
+  
+  .cardInfo {
+    padding: 1rem;
+  }
+  
+  .cardInfo .resTitle {
+    color: black;
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  .cardInfo .continent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .cardInfo .continent .icon {
+    color: black;
+    font-size: 18px;
+  }
+  
+  .cardInfo .continent .name {
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  /******************* SEARCH MENU *******************/
+  .search-menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .secContent {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .secContent {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .secContent {
+      grid-template-columns: 1fr; /* 1 column for extra small screens */
+    }
+  }
+  
+  /******************* FOOTER *******************/
+  footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    background: #fd843d;
+    color: white;
+    margin-top: auto;
+  }
+  

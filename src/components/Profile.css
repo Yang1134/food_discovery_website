@@ -1,0 +1,235 @@
+
+.homepage {
+    background-image: url("/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /******************* HEADER *******************/
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff9f1;
+    height: 88px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 0px; /* Add space between heading and grid */
+    margin-left: 70px; 
+  }
+  
+  .logo {
+    background: #ffffff;
+  }
+  
+  .logo img {
+    height: 76px;
+    width: 67px;
+    margin: 5px 60px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul .center-items {
+    display: flex;
+    gap: 38px;
+    margin-right: 180px;
+  }
+  
+  nav ul .right-items {
+    display: flex;
+    gap: 38px;
+    margin-right: 90px;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav ul li a:visited {
+    color: black;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fd843d;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a.no-underline::after {
+    display: none;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  nav ul li a.applyForPartner {
+    background-color: #fd843d;
+    padding: 8px 14px;
+    border-radius: 12px;
+    color: white;
+  }
+  
+  nav ul li a.applyForPartner:hover {
+    background-color: #fa7224;
+  }
+  
+  /******************* MAIN *******************/
+  
+  body {
+  
+    background-color: #fff9f1;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the content */
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add consistent padding */
+  }
+  
+  /* Grid Layout */
+  .categories-grid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+    width: 100%; /* Ensure the grid spans the full container width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Category Card */
+  .category-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; /* Space between each card and info */
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-email {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.preferences-grid {
+  display: flex;              /* Use flexbox layout */
+  flex-wrap: wrap;            /* Allow the boxes to wrap to the next line */
+  gap: 10px;                  /* Add space between the boxes */
+  justify-content: flex-start; /* Align the boxes to the start of the container */
+}
+
+.preference-box {
+  background-color: white;   /* White background */
+  border: 1px solid #ccc;    /* Optional: Add a border to separate them */
+  padding: 5px 10px;             /* Optional: Add some padding for spacing */
+  border-radius: 25px;         /* Optional: Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  width: 100px;   
+  font-size: 14px;
+  margin: 5px;            /* Set a fixed width for each box */
+  text-align: center;         /* Optional: Center text inside the box */
+}
+
+
+
+.preference-box:hover {
+  transform: scale(1.05);     /* Slight scale on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Stronger shadow on hover */
+}
+
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure the card takes full width */
+  }
+  
+  
+  .category-image {
+    width: 100%; /* Ensure the image spans the full card width */
+    height: 250px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio and fill the space */
+  
+  }
+  
+  .category-info {
+    width: 100%; /* Ensure the info section spans the full width */
+    text-align: left; /* Align text to the left */
+    padding: 10px;
+    background-color: #fff9f1;
+     /* Remove any top margin */
+  }
+  
+  .category-info h2 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .category-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  
+  /******************* FOOTER *******************/
+  footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    background: #fd843d;
+    color: white;
+  }

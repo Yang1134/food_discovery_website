@@ -1,0 +1,45 @@
+{
+  "name": "mtbpro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@firebase/auth": "^1.8.1",
+    "@google/generative-ai": "^0.21.0",
+    "@mui/icons-material": "^6.3.0",
+    "@mui/material": "^6.2.1",
+    "@vis.gl/react-google-maps": "^1.4.2",
+    "axios": "^1.7.9",
+    "firebase": "^11.1.0",
+    "google-map-react": "^2.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router": "^7.1.0",
+    "react-router-dom": "^7.1.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "vite-plugin-env-compatible": "^2.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.13.0",
+    "vite": "^6.0.3"
+  }
+}
